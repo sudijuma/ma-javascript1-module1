@@ -12,11 +12,26 @@ const cats = [
     }
 ];
 
-var cat = [
+// Q1
+const cat = [
     {
-        complain: function catNoise(){
+        complain: function () {
             console.log("Meow!")
         }
-    }
+    },
 ]
-catNoise()
+
+//Q2
+const heading = document.querySelector("h3");
+heading.innerHTML = "Uppdated heading"
+
+
+//Q3
+ heading.style.fontSize = "2em";
+
+ //Q4
+ heading.className = "subheading";
+ console.log(heading);
+
+ //Q5
+
