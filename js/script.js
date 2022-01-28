@@ -12,3 +12,11 @@ const cats = [
     }
 ];
 
+var cat = [
+    {
+        complain: function catNoise(){
+            console.log("Meow!")
+        }
+    }
+]
+catNoise()
