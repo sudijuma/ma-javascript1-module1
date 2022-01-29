@@ -27,11 +27,18 @@ heading.innerHTML = "Uppdated heading"
 
 
 //Q3
- heading.style.fontSize = "2em";
+heading.style.fontSize = "2em";
 
- //Q4
- heading.className = "subheading";
- console.log(heading);
+//Q4
+heading.className = "subheading";
+console.log(heading);
 
- //Q5
+//Q5
+var paragraphs = document.querySelectorAll("p");
+for (var i = 0; i < paragraphs.length; i++) {
+    paragraphs[i].style.color = "#ff0000";
+}
 
+//Q6
+var resultsContainer = document.querySelector(".results");
+resultsContainer.innerHTML = `<p>New paragraph</p>`
