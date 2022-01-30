@@ -69,7 +69,7 @@ function createCats(cats) {
             <p>${cats[i].age}</p>
         </div
         `;
-    } return fjert;
+    } return html;
 }
 container.innerHTML = html;
 /* const catAge = cat.age;
