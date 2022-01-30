@@ -53,25 +53,28 @@ function dude(list) {
 dude(cats)
 
 //Q8
+
 const container = document.querySelector(".cat-container");
-let html = "";
+let minHTML = "";
 function createCats(cats) {
-    for (var i = 0; i < cats.lenght; i++) {
+    for (var i = 0; i < cats.length; i++) {
         let theAge = "";
         if (cats[i].age) {
             theAge = cats[i].age;
         } else {
-            console.log(theAge = "Age unknown")
+            theAge = "Age Unknow";
         }
-        html = html +
-            `<div>
+
+        minHTML = minHTML + `
+        <div>
             <h5>${cats[i].name}</h5>
             <p>${cats[i].age}</p>
-        </div
-        `;
-    } return html;
+            </div
+            `;
+    } return minHTML;
 }
-container.innerHTML = html;
+container.innerHTML = minHTML;
+
 /* const catAge = cat.age;
 cats.forEach(function(createCats){
     createCats.innerHTML = `<div>${{}}</div>
@@ -79,3 +82,10 @@ cats.forEach(function(createCats){
     <p>${catAge ? false : "Age uknown"}</p>`
 })
 .cat-container = catAge; */
+/* 
+let theAge = "";
+if (cats[i].age) {
+    theAge = cats[i].age;
+} else {
+    console.log(theAge = "Age unknown")
+} */
