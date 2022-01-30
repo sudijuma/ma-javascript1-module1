@@ -45,11 +45,38 @@ resultsContainer.innerHTML = `<p>New paragraph</p>`;
 resultsContainer.style.backgroundColor = "yellow";
 
 //Q7
-function dude(list){
-    for (var i = 0; i < list.length; i++){
+function dude(list) {
+    for (var i = 0; i < list.length; i++) {
         console.log(list[i].name)
     }
 }
 dude(cats)
 
 //Q8
+const container = document.querySelector(".cat-container");
+let html = "";
+function createCats(cats) {
+    for (var i = 0; i < cats.lenght; i++) {
+        let theAge = "";
+        if (cats[i].age) {
+            theAge = cats[i].age;
+        } else {
+            console.log(theAge = "Age unknown")
+        }
+        html = html +
+
+            `<div>
+            <h5>${cats[i].name}</h5>
+            <p>${cats[i].age}</p>
+        </div
+        `;
+    } return html
+}
+container.innerHTML = html; 
+/* const catAge = cat.age;
+cats.forEach(function(createCats){
+    createCats.innerHTML = `<div>${{}}</div>
+    <h5>${name}</h5>
+    <p>${catAge ? false : "Age uknown"}</p>`
+})
+.cat-container = catAge; */
