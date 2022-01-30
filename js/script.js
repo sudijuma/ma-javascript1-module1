@@ -64,15 +64,14 @@ function createCats(cats) {
             console.log(theAge = "Age unknown")
         }
         html = html +
-
             `<div>
             <h5>${cats[i].name}</h5>
             <p>${cats[i].age}</p>
         </div
         `;
-    } return html
+    } return fjert;
 }
-container.innerHTML = html; 
+container.innerHTML = html;
 /* const catAge = cat.age;
 cats.forEach(function(createCats){
     createCats.innerHTML = `<div>${{}}</div>
