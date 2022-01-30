@@ -41,4 +41,15 @@ for (var i = 0; i < paragraphs.length; i++) {
 
 //Q6
 var resultsContainer = document.querySelector(".results");
-resultsContainer.innerHTML = `<p>New paragraph</p>`
+resultsContainer.innerHTML = `<p>New paragraph</p>`;
+resultsContainer.style.backgroundColor = "yellow";
+
+//Q7
+function dude(list){
+    for (var i = 0; i < list.length; i++){
+        console.log(list[i].name)
+    }
+}
+dude(cats)
+
+//Q8
