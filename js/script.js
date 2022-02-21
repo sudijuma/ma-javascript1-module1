@@ -55,25 +55,21 @@ dude(cats)
 //Q8
 
 const container = document.querySelector(".cat-container");
-let minHTML = "";
 function createCats(cats) {
+    let minHTML = "";
     for (var i = 0; i < cats.length; i++) {
-        let theAge = "";
-        if (cats[i].age) {
-            theAge = cats[i].age;
-        } else {
-            theAge = "Age Unknow";
-        }
-
-        minHTML = minHTML + `
+        minHTML += `
         <div>
             <h5>${cats[i].name}</h5>
-            <p>${cats[i].age}</p>
+            <p>${cats[i].age ? cats[i].age : "age unknown"}</p>
             </div
             `;
-    } return minHTML;
+    }
+    return minHTML;
 }
-container.innerHTML = minHTML;
+const myCats = createCats(cats)
+container.innerHTML = myCats;
+
 
 /* const catAge = cat.age;
 cats.forEach(function(createCats){
